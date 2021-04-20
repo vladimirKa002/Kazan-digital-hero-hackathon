@@ -1,0 +1,53 @@
+.tooltip {
+  cursor: pointer; 
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+	border-radius: 5 px;
+}
+.tooltip:hover::after {
+    content: "Логин"; /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+	top: 95%;
+    left: 95%;
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: white;
+    font-family: Roboto; /* Гарнитура шрифта */
+    font-size: 16px; /* Размер текста подсказки */
+	border-radius: 6 px;
+   }
+   
+   .tooltip_show_ac {
+  cursor: pointer; 
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+	border-radius: 5 px;
+}
+.tooltip_show_ac:hover::after {
+    content: "Показать все ДТП/точки конц."; /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+	top: 95%;
+    left: 95%;
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: white;
+    font-family: Roboto; /* Гарнитура шрифта */
+    font-size: 16px; /* Размер текста подсказки */
+	border-radius: 6 px;
+   }
+   
+      .tooltip_tracker {
+  cursor: pointer; 
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+	border-radius: 5 px;
+}
+.tooltip_tracker:hover::after {
+    content: "Активировать трекер"; /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+	top: 95%;
+    left: 95%;
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: white;
+    font-family: Roboto; /* Гарнитура шрифта */
+    font-size: 16px; /* Размер текста подсказки */
+	border-radius: 6 px;
+   }

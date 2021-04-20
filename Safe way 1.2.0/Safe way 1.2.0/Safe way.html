@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Safe way</title>
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIETB6uHrfhWM7KFzpiwuCEHletEXU2sk&callback=initMap&libraries=places&v=weekly"
+      defer 
+    ></script>
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+	<link rel="stylesheet" type="text/css" href="./style_but_login.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+	<div id="login_but">
+	<div class="tooltip" ><img src="images/but_login.png" onclick="location.href='./login.html'" alt=""/>
+	</div></div>
+	<div class="pac-card" id="pac-card">
+      <div>
+        <div id="title">
+          Search
+        </div>
+      </div>
+      <div id="pac-container">
+        <input id="pac-input" type="text" placeholder="Enter a location" />
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon" />
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
+  </body>
+</html>

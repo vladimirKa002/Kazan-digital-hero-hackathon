@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Safe way admin mode</title>
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaBedHCtSd1IgXvVKJqDF2PQKciEjjChc&callback=initMap&libraries=places&v=weekly"
+      defer 
+    ></script>
+	<link rel="shortcut icon" href="./images/logo.png">
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+	<link rel="stylesheet" type="text/css" href="./style_but_login.css" />
+    <script src="./app_admin.js"></script>
+	<script src="./Chart.js"></script>
+  </head>
+  <body>
+	<div id="loading_f"> 
+	<text id="Loadint_text">
+          Загрузка...
+        </text>
+	</div>
+	<div id="show_but">
+	<div class="tooltip_show_ac">
+	<img id="button_show" src="images/btn_acc_show.png" onclick="show_somth(false)"/>
+	</div></div>
+	<div id="image_container" align="center" style="visability: hidden;">
+		<header>
+		<h1 id="header">Результат</h1>
+		</header>
+	</div>
+	<div class="pac-card" id="pac-card">
+      <div>
+        <div id="title">
+          Поиск
+        </div>
+      </div>
+      <div id="pac-container">
+        <input id="pac-input" type="text" placeholder="Enter a location" />
+      </div>
+    </div>
+    <div id="map"></div>
+	<form method="get" id="select_year">
+        <text id="title_year">
+          Год
+        </text>
+		<select id="year_box" onchange="show_somth(true);">
+		<script src="./setuppoints_admin.js"></script>
+		<option value="2019"  selected="selected">2019</option>
+		<option value="2018">2018</option>
+		<option value="2017">2017</option>
+		</select>
+	</form>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon" />
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
+  </body>
+</html>

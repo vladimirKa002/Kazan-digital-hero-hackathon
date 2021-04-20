@@ -1,0 +1,52 @@
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-left: 12px;
+  padding: 5px 11px 5px 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+.main {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+	margin-left:38%;
+	margin-top:15%;
+	
+	padding: 15 px;
+    
+}
+
+#header{
+  font-family: Roboto;
+}
+
+
+#button {
+  cursor: pointer; 
+	background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+    padding: 5px 5px;
+  margin-top: 8px;
+  margin-left: 12px;
+  padding: 5px 11px 5px 11px;
+  text-overflow: ellipsis;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.button_map {
+    position: absolute;
+	margin-left:0%;
+	margin-top:43%;
+	padding: 15 px;
+    
+}

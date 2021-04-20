@@ -1,0 +1,17 @@
+.tooltip {
+  cursor: pointer; 
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+	border-radius: 5 px;
+}
+.tooltip:hover::after {
+    content: "Login"; /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+	top: 95%;
+    left: 95%;
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: white;
+    font-family: Roboto; /* Гарнитура шрифта */
+    font-size: 16px; /* Размер текста подсказки */
+	border-radius: 6 px;
+   }

@@ -1,0 +1,18 @@
+#header_alert{
+  font-family: Roboto; 
+  color: red;
+  font-size: 25px;
+}
+
+#alert{
+	visibility: hidden;
+ padding: 5px;
+  border-radius: 15px;
+  border-color: #fff;
+ background: #fff;
+ color: #4d90fe;
+ font:bold;
+ cursor: pointer;
+  margin-top: 11px;
+  margin-left: 0px;
+}

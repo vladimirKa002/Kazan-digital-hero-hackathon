@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Safe way</title>
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaBedHCtSd1IgXvVKJqDF2PQKciEjjChc&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+	<link rel="shortcut icon" href="./images/logo.png">
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+	<link rel="stylesheet" type="text/css" href="./style_but_login.css" />
+	<link rel="stylesheet" type="text/css" href="./style_login_scr.css" />
+	<link rel="stylesheet" type="text/css" href="./style_alert.css" />
+    <script src="./app.js"></script>
+	<script src="./tracker.js"></script>
+  </head>
+  <body>
+  <div id="alert" onclick="close_alert()"><h3 id="header_alert">Внимание! Опасный участок!</h3>
+  </div>
+	<form method="get" id="select_year">
+        <text id="title_year">
+          Год
+        </text>
+		<select id="year_box" onchange="show_somth(true);">
+		<script src="./setuppoints.js"></script>
+		<option value="2019" selected="selected">2019</option>
+		<option value="2018">2018</option>
+		<option value="2017">2017</option>
+		</select>
+	</form>
+  <div id="toolbar">
+	<div id="login_but">
+	<div class="tooltip">
+	<img src="images/but_login.png" onclick="showloginForm()"/>
+	</div></div>
+	<div id="show_but">
+	<div class="tooltip_show_ac">
+	<img id="button_show" src="images/btn_acc_show.png" onclick="show_somth(false)"/>
+	</div></div>
+	<div id="but_tracker">
+	<div class="tooltip_tracker">
+	<img id="but_tracker_img" src="images/but_tracker.png" onclick="start_track();">
+	</div></div>
+  </div>
+	<div id="login_form" align="center" style="visability: hidden;">
+		<header>
+		<h1 id="header">Войти</h1>
+		</header>
+		<script src="./login.js"></script>
+		<input id="login" type="login" placeholder="Логин" required/>
+		<input id="password" type="password" placeholder="Пароль" required/>
+		<button name="enter_b" onclick="check()" id="button">Войти</button>
+		<button name="back_b" onclick="closeloginForm()" id="button">Назад</button>
+	</div>
+	<div id="loading_f" style="display: none;"> 
+	<text id="Loadint_text">
+          Загрузка...
+        </text>
+	</div>
+	<div class="pac-card" id="pac-card">
+      <div>
+        <div id="title">
+          Поиск
+        </div>
+      </div>
+      <div id="pac-container">
+        <input id="pac-input" type="text" placeholder="Введите местоположение" />
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon" />
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
+  </body>
+</html>
