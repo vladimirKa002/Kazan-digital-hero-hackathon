@@ -1,4 +1,4 @@
-Accident tracking system
+**Accident tracking system**
 
 This is a website for viewing information about accidents and their concentrations in the Tatarstan Republic.
 
